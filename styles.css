@@ -10,9 +10,13 @@
     width: 608px;
     height: 608px;
     margin: auto;
+    border:1px solid rgb(36, 36, 36);
 }
 
 .grid-item {
     padding: 18px;
-    border:1px solid #ddd;
+}
+
+.my-color-class {
+    background-color: grey;
 }
