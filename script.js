@@ -13,13 +13,13 @@ function makeRows(rows, cols) {
     };
 };
 
-makeRows(16, 16);
-
 function changeSize(width, height) {
-    prompt(width,height)
+    let size = prompt("Enter your grid size (0-100)");
+    return makeRows(size,size);
 };
 
 
-const sizeButton = document.getElementsByClassName("sizeButton");
+const sizeButton = document.querySelector(".sizeButton");
+
 sizeButton.addEventListener("click", 
-    () => changeSize())
+    () => changeSize());
