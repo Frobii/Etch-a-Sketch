@@ -14,3 +14,12 @@ function makeRows(rows, cols) {
 };
 
 makeRows(16, 16);
+
+function changeSize(width, height) {
+    prompt(width,height)
+};
+
+
+const sizeButton = document.getElementsByClassName("sizeButton");
+sizeButton.addEventListener("click", 
+    () => changeSize())
