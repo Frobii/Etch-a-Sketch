@@ -13,9 +13,15 @@ function makeRows(rows, cols) {
     };
 };
 
-function changeSize(width, height) {
+function changeSize() {
     let size = prompt("Enter your grid size (0-100)");
-    return makeRows(size,size);
+    for (i = 0; i < 1; i++) 
+        if (size <= 100 && size > 0) {
+            return makeRows(size,size);
+        } else {
+            size = prompt("Enter your grid size (0-100)");
+            i--
+        };
 };
 
 
