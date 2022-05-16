@@ -13,8 +13,12 @@ function makeRows(rows, cols) {
     };
 };
 
-function changeSize() {
-    let size = prompt("Enter your grid size (0-100)");
+function changeSize(size) {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild)
+    };
+    
+    size = prompt("Enter your grid size (0-100)");
     for (i = 0; i < 1; i++) 
         if (size <= 100 && size > 0) {
             return makeRows(size,size);
