@@ -18,8 +18,8 @@ function changeSize() {
     for (i = 0; i < 1; i++) 
         if (size <= 100 && size > 0) {
             return makeRows(size,size);
-        } else {
-            size = prompt("Enter your grid size (0-100)");
+        } else if (size > 100 || size < 0) {
+            size = prompt("Enter a valid grid size (0-100)");
             i--
         };
 };
