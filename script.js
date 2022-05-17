@@ -22,7 +22,7 @@ function changeSize(size) {
     for (i = 0; i < 1; i++) 
         if (size <= 100 && size > 0) {
             return makeRows(size,size);
-        } else if (size > 100 || size < 0) {
+        } else if (size > 100 || size < 1) {
             size = prompt("Enter a valid grid size (0-100)");
             i--
         };
