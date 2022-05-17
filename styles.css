@@ -3,24 +3,29 @@
     --grid-rows: 1;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+}
+
 .buttonContainer {
     display: flex;
     justify-content: center;
-    margin-bottom: 8px;
+    margin-bottom: 21.440px;
 }
 
 #container {
     display: grid;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    width: 608px;
-    height: 608px;
+    width: 650px;
+    height: 650px;
     margin: auto;
     border:1px solid rgb(36, 36, 36);
 }
 
 .grid-item {
-    padding: 18px;
+    padding: max-content;
 }
 
 .my-color-class {
