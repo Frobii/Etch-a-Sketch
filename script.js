@@ -35,10 +35,12 @@ function generateRandomColor() {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
-    
 };
 
 const sizeButton = document.querySelector(".sizeButton");
 
 sizeButton.addEventListener("click", 
     () => changeSize());
+
+
+const rainbowButton = document.querySelector(".rainbowButton")
