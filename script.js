@@ -41,6 +41,3 @@ const sizeButton = document.querySelector(".sizeButton");
 
 sizeButton.addEventListener("click", 
     () => changeSize());
-
-
-const rainbowButton = document.querySelector(".rainbowButton")
