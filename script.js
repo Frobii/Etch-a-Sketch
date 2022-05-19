@@ -41,3 +41,10 @@ const sizeButton = document.querySelector(".sizeButton");
 
 sizeButton.addEventListener("click", 
     () => changeSize());
+
+let rainbowButton = document.getElementById("rainbowButton");
+
+function checkboxStatus(check) {
+    check = rainbowButton.checked
+    return check;
+};
