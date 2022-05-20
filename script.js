@@ -30,11 +30,11 @@ function changeSize(size) {
         } else if (size > 100) {
             size = prompt("Enter a valid grid size (0-100)");
             i--
-        } else if (isNaN(size)) {
+        } else if (isNaN(size)) { // re-prompts the button if NaN is entered
             size = prompt("Enter a valid grid size (0-100)");
             i--
-        } else {
-        }; // allows the close button to maintain functionality
+        } else { // allows the close button to maintain functionality
+        }; 
 };
 
 const sizeButton = document.querySelector(".sizeButton");
