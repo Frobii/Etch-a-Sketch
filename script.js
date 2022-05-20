@@ -49,3 +49,22 @@ function generateRandomColor() {
 };
 
 let rainbowButton = document.getElementById("rainbowButton");
+
+function changeMode() {
+    if (rainbowButton.checked == true) {
+        let cell = document.getElementsByClassName("grid-item");
+        for (let i = 0; i < cell.length; i++) {
+            cell[i].addEventListener("mouseover", 
+            () => cell[i].style.backgroundColor = generateRandomColor());
+        };
+    } else if (rainbowButton.checked == false) {
+        let cell = document.getElementsByClassName("grid-item");
+        for (let i = 0; i < cell.length; i++) {
+            cell[i].addEventListener("mouseover", 
+            () => cell[i].style.backgroundColor = "grey");
+        };
+    };
+};
+
+rainbowButton.addEventListener("click", 
+() => changeMode());
