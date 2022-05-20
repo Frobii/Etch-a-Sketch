@@ -30,6 +30,9 @@ function changeSize(size) {
         } else if (size > 100) {
             size = prompt("Enter a valid grid size (0-100)");
             i--
+        } else if (isNaN(size)) {
+            size = prompt("Enter a valid grid size (0-100)");
+            i--
         } else {
         }; // allows the close button to maintain functionality
 };
